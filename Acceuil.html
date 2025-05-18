@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="Accueil.css">
+</head>
+<body>
+    <div class="arrièreplan">
+    <header>
+    <nav>
+      <h1>Mon Portfolio</h1>
+      <ul>
+        <li><a href="#hero">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#education">Parcours</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="info">
+    <h3> Hello , Je suis Ndeye Anta Ndiaye</h3>
+    <h1> Référente Digital</h1>
+    <h3> Je conçois des solutions numériques modernes,<br>
+         accessibles et adaptées aux besoins d’aujourd’hui.</h3>
+    <a href="#contact" class="bouton">Contactez-moi</a>
+  </div>
+  <div class="image">
+    <img src="photopro.png" alt="anta" class="photo">
+  </div>
+  <div>
+    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+  </div>
+    </div>
+    <section id="about" class="about-container">
+  <div class="about-photo">
+    <img src="photopro.png" alt="Ndeye Anta Ndiaye">
+  </div>
+  <div class="about-text">
+    <h2>À propos</h2>
+    <p>
+      Je suis Ndeye Anta Ndiaye, Référente Digitale passionnée par l’innovation et le numérique inclusif.
+      Formée chez Simplon Sénégal, je maîtrise le développement web (HTML/CSS, WordPress), l’UX/UI design et le SEO.
+      Co-fondatrice de Women Tech 221, j’accompagne les PME, startups et projets à impact dans leur transformation digitale,
+      avec un fort engagement pour l’accessibilité numérique.<br><br>
+      📍 Basée au Sénégal — disponible pour des collaborations à distance ou en présentiel.
+    </p>
+  </div>
+    </section>
+    <section id="skills" class="skills-section">
+  <h2>Mes compétences</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <h3>Développement Web</h3>
+      <p>HTML, CSS</p>
+    </div>
+    <div class="skill-card">
+      <h3>Design & Vidéo</h3>
+      <p>Figma, Canva, CapCut</p>
+    </div>
+    <div class="skill-card">
+      <h3>Marketing Numérique</h3>
+      <p>Stratégie, contenu, réseaux sociaux</p>
+    </div>
+    <div class="skill-card">
+      <h3>Community Management</h3>
+      <p>Création, gestion, reporting</p>
+    </div>
+    <div class="skill-card">
+      <h3>Gestion de Projet Agile</h3>
+      <p>SCRUM, Trello, Miro</p>
+    </div>
+    <div class="skill-card">
+      <h3>Outils Collaboratifs</h3>
+      <p>Google Workspace, Canva, Discord</p>
+    </div>
+    <div class="skill-card">
+      <h3>Bureautique</h3>
+      <p>Word, Excel, PowerPoint</p>
+    </div>
+  </div>
+</section>
+<section id="projects" class="projects-section">
+  <!-- Section contenant les projets avec un ID pour le menu et une classe pour le style -->
+  <h2>Mes Projets</h2>
+  <!-- Titre de la section -->
+
+  <div class="projects-grid">
+    <!-- Grille qui contient toutes les cartes de projet -->
+
+    <div class="project-card">
+      <!-- Carte 1 : projet réel ou fictif -->
+      <img src="women tech.jpeg" alt="Projet Women Tech 221">
+      <!-- Image illustrant le projet (à placer dans un dossier img) -->
+      <h3>Women Tech 221</h3>
+      <!-- Titre du projet -->
+      <p>Co-fondation d’une startup féminine pour le digital des PME locales.</p>
+      <!-- Brève description du projet -->
+      <a href="https://www.linkedin.com/company/105791559/" class="btn">Voir plus</a>
+      <!-- Lien vers plus de détails (portfolio, maquette, GitHub, etc.) -->
+    </div>
+
+    <div class="project-card">
+      <!-- Carte 2 -->
+      <img src="AEH UCAD.png" alt="Projet Accessibilité">
+      <h3>Plateforme Accessibilité</h3>
+      <p>Site WordPress pour étudiants en situation de handicap à l’UCAD.</p>
+      <a href="https://dev-aesh-ucad.pantheonsite.io/" class="btn">Voir plus</a>
+    </div>
+
+    <div class="project-card">
+      <!-- Carte 3 -->
+      <img src="Sunu fast.png" alt="Prototype App Sunu Fast">
+      <h3> Prototype App “Sunu Fast”</h3>
+      <p>Conception UI/UX sur Figma pour une application de fast-food</p>
+      <a href="https://www.figma.com/proto/zQtTrTpMn6UmOIR5EQ0zjh/Attestation-site-web?node-id=659-580&starting-point-node-id=648%3A483&t=R12XaV47QJZqLXjk-1" class="btn">Voir plus</a>
+    </div>
+
+  </div>
+</section>
+<section id="contact" class="contact-section">
+  <!-- Section dédiée au formulaire de contact, avec un ID pour le lien et une classe pour le style -->
+  <h2>Contactez-moi</h2>
+  <!-- Titre visible de la section -->
+
+  <form action="#" method="POST" class="contact-form">
+    <!-- Formulaire HTML avec méthode POST (envoi des données), action à définir plus tard -->
+    
+    <label for="name">Nom</label>
+    <!-- Étiquette du champ "Nom", liée à l’input par l’attribut 'for' -->
+    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+    <!-- Champ texte pour saisir le nom, avec un texte indicatif et champ obligatoire -->
+
+    <label for="email">Email</label>
+    <!-- Étiquette du champ "Email" -->
+    <input type="email" id="email" name="email" placeholder="Votre email" required>
+    <!-- Champ email avec validation automatique du format et obligatoire -->
+
+    <label for="message">Message</label>
+    <!-- Étiquette pour le message -->
+    <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+    <!-- Zone de texte multi-ligne pour écrire le message, obligatoire -->
+
+    <button type="submit">Envoyer</button>
+    <!-- Bouton pour soumettre le formulaire -->
+  </form>
+</section>
+</body>
+<footer class="footer">
+  <p>© 2025 Ndeye Anta Ndiaye. Tous droits réservés.</p>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/ndeye-anta-ndiaye/?trk=public-profile-join-page" target="_blank" aria-label="LinkedIn">
+      <img src="link.png" alt="LinkedIn" />
+    </a>
+    <a href="https://github.com/ndiaye259" target="_blank" aria-label="GitHub">
+      <img src="github.png" alt="GitHub" />
+    </a>
+    <a href="https://www.facebook.com/ndeyeanta.ndiaye.9693" target="_blank" aria-label="Facebook">
+      <img src="face.png" alt="Facebook" />
+    </a>
+  </div>
+</footer>
+</html>

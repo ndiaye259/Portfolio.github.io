@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header {
+    color: black;
+    padding: 1rem 2rem;
+}
+.arrièreplan{
+    width: 100%;
+    background-image: url(background.avif);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+    font-family: arial;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 86%;
+    margin: auto;
+    padding: 30px 0;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000; /* Met la navbar au-dessus des autres éléments */
+}
+ul{
+    margin-top: -4%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+} 
+nav li a{
+    font-size: 16px;
+    font-weight: bold; /* METTRE EN GRAS */
+    text-decoration: none; /* enlève le soulignement */
+    color: black;
+    transition: 4s ease;
+}
+ul li a:hover{
+    color: grey;
+}
+.info{
+    margin-left: 7%;
+    margin-top: 8%;
+}
+.info h1{
+    font-size: 50px;
+    color: rgb(41, 94, 192);
+}
+.info h3{
+    font-size: 18px;
+    letter-spacing: 2px;  /* espace entre les lettre */
+    line-height: 24px;
+}
+.info a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    margin: 26px 0;
+    padding: 10px 18px ;
+    border-radius: 10px;
+    display: inline-block;
+}
+.info a:hover{
+background:  rgb(41, 94, 192);
+}
+.image{
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    top: 203PX;
+}
+.image img{
+    position: absolute;
+    height: 120%;
+    left: 40%;
+    transform: translate(-55%);
+    bottom: 0;
+    transition: left 2s ease;
+}
+.image:hover .photo{
+    left: 55%;
+}
+.about-container {
+    margin-left: 7%;
+    margin-right: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    padding: 35px 0;
+    flex-wrap: wrap;
+}
+
+.about-photo img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  max-width: 700px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.about-text h2{
+    font-size: 36px;
+    color:  rgb(41, 94, 192);
+}
+/* Style global de la section */
+.skills-section {
+  padding: 3rem 2rem; /* Espace intérieur autour du contenu */
+  background-color: #f9f9f9; /* Couleur de fond gris très clair */
+  text-align: center; /* Centrer le texte */
+}
+
+/* Style du titre "Mes compétences" */
+.skills-section h2 {
+  font-size: 36px; /* Taille du texte (grande) */
+  margin-bottom: 2rem; /* Espace sous le titre */
+  color:  rgb(41, 94, 192); /* Couleur du texte : gris foncé */
+}
+
+/* Grille qui contient les cartes de compétences */
+.skills-grid {
+    margin-left: 7%;
+    margin-right: 7%;
+  display: grid; /* Utilise le système de grille CSS */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* Crée plusieurs colonnes responsives : 
+     chaque colonne fait au moins 250px, au max 1 fraction (1fr) */
+  gap: 1.5rem; /* Espace entre les cartes */
+}
+
+/* Style de base de chaque carte de compétence */
+.skill-card {
+  background-color: #fff; /* Fond blanc */
+  border-radius: 12px; /* Coins arrondis */
+  padding: 1.5rem; /* Espace intérieur */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Ombre douce */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Animation douce au survol */
+}
+
+/* Effet au survol (hover) de la carte */
+.skill-card:hover {
+  transform: translateY(-5px); /* Légère élévation vers le haut */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12); /* Ombre plus marquée */
+}
+
+/* Titre de chaque carte (ex: "Développement Web") */
+.skill-card h3 {
+  color:  rgb(41, 94, 192); /* Couleur verte/bleue */
+  margin-bottom: 0.5rem; /* Petit espace sous le titre */
+  font-size: 1.2rem; /* Taille de texte moyenne */
+}
+
+/* Texte de chaque carte (liste des outils) */
+.skill-card p {
+  color: black; /* Gris foncé */
+  font-size: 1rem; /* Taille normale */
+  line-height: 1.4; /* Hauteur de ligne pour lisibilité */
+}
+.projects-section {
+  padding: 50px 20px; /* Espacement intérieur : haut/bas 50px, gauche/droite 20px */
+  background-color: #f5f5f5; /* Couleur de fond claire pour faire ressortir les cartes */
+  text-align: center; /* Centrer le titre */
+}
+
+.projects-section h2 {
+  font-size: 36px; /* Taille du titre */
+  margin-bottom: 30px; /* Espace en dessous du titre */
+  color: rgb(41, 94, 192); /* Couleur du texte */
+}
+
+.projects-grid {
+    margin-left: 7%;
+    margin-right: 7%;
+  display: grid; /* Utilisation du système de grille CSS */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  /* Colonnes adaptatives : au moins 280px, et remplissage automatique */
+  gap: 30px; /* Espace entre les cartes */
+  margin-top: 30px; /* Espacement entre le titre et la grille */
+}
+
+.project-card {
+  background: #fff; /* Fond blanc des cartes */
+  border-radius: 16px; /* Coins arrondis */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  overflow: hidden; /* Empêche le contenu de dépasser les bords */
+  transition: transform 0.3s ease; /* Animation lors du survol */
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* Effet de léger déplacement vers le haut au survol */
+}
+
+.project-card img {
+  width: 100%; /* Image prend toute la largeur */
+  height: 180px; /* Hauteur fixe */
+  object-fit: cover; /* Recadre proprement l’image sans déformation */
+}
+
+.project-card h3 {
+  margin: 15px 0 5px; /* Espacements autour du titre du projet */
+  font-size: 1.2rem; /* Taille du titre */
+  color: black; /* Couleur sombre pour le titre */
+}
+
+.project-card p {
+  font-size: 0.95rem; /* Taille du texte de description */
+  color: black; /* Couleur gris foncé */
+  padding: 0 15px; /* Espacement horizontal dans le paragraphe */
+}
+
+.project-card .btn {
+  display: inline-block; /* Comportement en ligne avec propriétés de bloc */
+  margin: 15px 0; /* Espacement autour du bouton */
+  padding: 8px 16px; /* Espace intérieur du bouton */
+  background-color: black; /* Couleur de fond (vert foncé) */
+  color: white; /* Couleur du texte */
+  text-decoration: none; /* Supprimer le soulignement */
+  border-radius: 25px; /* Bouton arrondi */
+  font-size: 0.9rem; /* Taille du texte du bouton */
+  transition:0.3s ease; /* Animation de couleur au survol */
+}
+
+.project-card .btn:hover {
+  background-color: rgb(41, 94, 192); /* Couleur plus foncée au survol */
+}
+.contact-section {
+  padding: 50px 20px; /* Espacement intérieur autour de la section */
+  background-color: #e9f5f2; /* Couleur douce en fond */
+  max-width: 600px; /* Largeur maximale du formulaire pour ne pas être trop large */
+  margin: 0 auto; /* Centrer horizontalement la section */
+  border-radius: 12px; /* Coins arrondis */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Ombre légère pour effet de profondeur */
+}
+
+.contact-section h2 {
+  text-align: center; /* Centrer le titre */
+  margin-bottom: 30px; /* Marge sous le titre */
+  color: rgb(41, 94, 192); /* Couleur verte pour le titre */
+  font-size: 36px; /* Taille du texte */
+}
+
+.contact-form {
+  display: flex; /* Utiliser Flexbox pour le formulaire */
+  flex-direction: column; /* Organiser les éléments verticalement */
+}
+
+.contact-form label {
+  margin-bottom: 8px; /* Espace sous chaque label */
+  font-weight: 600; /* Texte en semi-gras pour bien distinguer */
+  color: black; /* Couleur texte sombre */
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px; /* Espace intérieur dans les champs */
+  margin-bottom: 20px; /* Espace entre les champs */
+  border: 2px solid #ccc; /* Bordure grise claire */
+  border-radius: 8px; /* Bords arrondis */
+  font-size: 1rem; /* Taille du texte */
+  transition: border-color 0.3s ease; /* Animation douce lors du focus */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: rgb(41, 94, 192); /* Changer la bordure en vert au focus */
+  outline: none; /* Supprimer le contour par défaut */
+}
+
+.contact-form button {
+  background-color: rgb(41, 94, 192); /* bleu */
+  color: white; /* Texte blanc */
+  border: none; /* Pas de bordure */
+  padding: 14px; /* Espace intérieur confortable */
+  border-radius: 30px; /* Bouton arrondi */
+  font-size: 1.1rem; /* Texte légèrement plus grand */
+  cursor: pointer; /* Curseur pointeur au survol */
+  transition: background-color 0.3s ease; /* Animation au survol */
+}
+
+.contact-form button:hover {
+  background-color: rgb(41, 94, 192); /* Vert plus foncé au survol */
+}
+.footer {
+  background-color: rgb(41, 94, 192); /* Fond bleu */
+  color: white; /* Texte blanc */
+  text-align: center; /* Centrer le contenu */
+  padding: 20px 10px;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  border-radius: 0 0 12px 12px;
+}
+
+.footer p {
+  margin: 0 0 10px 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espacement entre les icônes */
+}
+
+.social-links a img {
+  width: 24px;
+  height: 24px;
+  filter: invert(100%); /* Rend les icônes blanches (si elles sont noires) */
+  transition: filter 0.3s ease;
+}
+
+.social-links a:hover img {
+  filter: invert(65%) sepia(100%) saturate(600%) hue-rotate(140deg);
+  /* Change couleur au survol (effet de surbrillance) */
+}
+
