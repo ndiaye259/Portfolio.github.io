@@ -327,4 +327,19 @@ background:  rgb(41, 94, 192);
   filter: invert(65%) sepia(100%) saturate(600%) hue-rotate(140deg);
   /* Change couleur au survol (effet de surbrillance) */
 }
+/* Tablettes */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  /* Ajoute ici tes règles spécifiques */
+}
+
+/* Mobiles */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+  /* Ajoute ici tes règles spécifiques */
+}
 
